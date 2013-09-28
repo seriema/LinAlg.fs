@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LinAlg", "LinAlg\LinAlg.fsproj", "{D30CEC14-8BBA-4887-8B98-24C2D92A8E4C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E078F391-D155-49E3-8D58-68798C4AAF72} = {E078F391-D155-49E3-8D58-68798C4AAF72}
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LinAlg.Math", "Math\LinAlg.Math.fsproj", "{E078F391-D155-49E3-8D58-68798C4AAF72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D30CEC14-8BBA-4887-8B98-24C2D92A8E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30CEC14-8BBA-4887-8B98-24C2D92A8E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30CEC14-8BBA-4887-8B98-24C2D92A8E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30CEC14-8BBA-4887-8B98-24C2D92A8E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E078F391-D155-49E3-8D58-68798C4AAF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E078F391-D155-49E3-8D58-68798C4AAF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E078F391-D155-49E3-8D58-68798C4AAF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E078F391-D155-49E3-8D58-68798C4AAF72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
