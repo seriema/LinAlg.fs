@@ -5,9 +5,9 @@
         member this.y = y
         static member (~-) (v : Vector2) =
             -1. * v
-        static member (*) (a, v: Vector2) =
+        static member (*) (a : float, v: Vector2) =
             Vector2(a * v.x, a * v.y)
-        static member (*) (v : Vector2, a) =
+        static member (*) (v : Vector2, a : float) =
             a * v
         static member (/) (v : Vector2, a) =
             (1. / a) * v
