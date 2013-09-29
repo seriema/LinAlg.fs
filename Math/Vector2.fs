@@ -4,15 +4,17 @@
         member this.x = x
         member this.y = y
         static member (~-) (v : Vector2) =
-            Vector2(-1.0 * v.x, -1.0 * v.y)
-        static member (*) (v : Vector2, a) =
-            Vector2(a * v.x, a * v.y)
+            -1. * v
         static member (*) (a, v: Vector2) =
             Vector2(a * v.x, a * v.y)
+        static member (*) (v : Vector2, a) =
+            a * v
         static member (/) (v : Vector2, a) =
-            Vector2(v.x / a, v.y / a)
+            (1. / a) * v
+        static member (+) (v : Vector2, u : Vector2) =
+            Vector2(v.x + u.x, v.y + u.y)
         static member (-) (v : Vector2, u : Vector2) =
-            Vector2(v.x - u.x, v.y - u.y)
+            v + (-u)
         override this.ToString() =
             this.x.ToString() + " " + this.y.ToString()
 
@@ -36,3 +38,6 @@
 
     let prep (v:Vector2) (u:Vector2) =
         u - proj v u
+
+    let isPerpendicular (v:Vector2) (u:Vector2) =
+        dot v u = 0.
